@@ -32,7 +32,7 @@ header {
 }
 
  nav {
-   border: 1px solid red;
+   border: 1px solid yellow;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -53,13 +53,15 @@ nav img {
 }
 
 nav ul {
+  border: 1px solid red;
   margin-right: 1rem;
-
+  align-items: flex-end;
 }
 
 nav li {
   display: inline;
   padding: 0 1rem;
+
 }
 
 .mobile-menu {
@@ -84,3 +86,70 @@ h1 {
   line-height: 1.2;
   font-weight: bold;
 }
+
+
+/* Main Content */
+
+/* Icon */
+
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.icon img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon img.paperIcon {
+  width: 3.5rem;
+}
+
+
+/* Info */
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.info h3 {
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+ footer img {
+   height: 1.5rem;
+   margin-left: 2rem;
+   margin-right: 1rem;
+ }
