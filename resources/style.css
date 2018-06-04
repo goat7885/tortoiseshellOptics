@@ -32,7 +32,6 @@ header {
 }
 
  nav {
-   border: 1px solid yellow;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -53,7 +52,6 @@ nav img {
 }
 
 nav ul {
-  border: 1px solid red;
   margin-right: 1rem;
   align-items: flex-end;
 }
@@ -69,7 +67,6 @@ nav li {
 }
 
 header .banner {
-  border: 1px solid red;
   justify-content: flex-end;
 }
 
@@ -87,6 +84,58 @@ h1 {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px) {
+    header {
+      height: 22rem;
+      padding-top: 0;
+    }
+
+    nav.container {
+      max-width: 100%;
+    }
+
+    .banner-main {
+      padding: .75rem 4rem;
+      margin-right: 2rem;
+      margin-top: 5rem;
+    }
+
+    .banner-main h1 {
+      font-size: 1.33rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.mobile-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div h4 {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .banner-main {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .banner-main h1 {
+    font-size: 1rem;
+  }
+}
 
 /* Main Content */
 
@@ -97,8 +146,16 @@ h1 {
   justify-content: center;
 }
 
+@media only screen and (max-width: 560px) {
+  .main {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+
 .icon {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,6 +173,14 @@ h1 {
 
 .icon img.paperIcon {
   width: 3.5rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .icon {
+    margin: .77rem;
+    font-size: .77rem;
+    height: auto;
+  }
 }
 
 
@@ -139,6 +204,24 @@ h1 {
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .info h3 {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+}
+
 
 /* Footer */
 
@@ -152,4 +235,14 @@ footer {
    height: 1.5rem;
    margin-left: 2rem;
    margin-right: 1rem;
- }
+}
+
+@media only screen and (max-width: 560px) {
+  footer {
+    justify-content: center;
+}
+
+  footer h4 {
+    display: none;
+  }
+}
